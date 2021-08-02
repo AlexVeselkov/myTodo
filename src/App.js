@@ -18,4 +18,4 @@ export default App;
 
 //Олег, я тут!
 
-//main
+//main Олег
