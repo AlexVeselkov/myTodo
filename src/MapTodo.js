@@ -7,14 +7,3 @@ const MapTodo = ({ todos, setTodos }) => {
 };
 
 export default MapTodo;
-
-
-const a = {
-	id: 1,
-	name: 'aaaa',
-	b: {
-		id: 2
-	}
-}
-
-a.b.id = 4;
