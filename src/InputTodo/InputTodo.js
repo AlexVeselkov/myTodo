@@ -1,4 +1,5 @@
 import { useState } from "react";
+import s from "./InputTodo.module.css";
 
 const InputTodo = ({ setTodos, todos }) => {
   const [value, setValue] = useState("");
@@ -12,7 +13,7 @@ const InputTodo = ({ setTodos, todos }) => {
   };
 
   return (
-    <div>
+    <div className={s.container}>
       <div>
         <input
           type="text"
@@ -30,15 +31,6 @@ const InputTodo = ({ setTodos, todos }) => {
           Сохранить
         </button>
         <button onClick={() => setTodos([])}>Очистить</button>
-      </div>
-      <div>
-        <input
-          type={isShow ? "text" : "password"}
-          placeholder="Введите пароль..."
-        ></input>
-        <button onClick={() => setIsShow((prev) => !prev)}>
-          Показать/Скрыть
-        </button>
       </div>
     </div>
   );
